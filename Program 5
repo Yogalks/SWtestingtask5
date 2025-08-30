@@ -1,0 +1,31 @@
+package task5;
+
+import java.util.Scanner;
+
+public class Grading {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Please enter your Marks:");
+		Scanner input = new Scanner(System.in);
+		int i = input.nextInt();
+		
+		if (i>100 || i<0){
+			System.out.println("Invalid Input");}
+		else if (i==100) {
+			System.out.println("Your grade is: S");}
+		else if (i>=90) {
+			System.out.println("Your grade is: A");}
+		else if (i>=80) {
+			System.out.println("Your grade is: B");}
+		else if (i>=70) {
+			System.out.println("Your grade is: C");}
+		else if (i>=60) {
+			System.out.println("Your grade is: D");}
+		else if (i>=50) {
+			System.out.println("Your grade is: e");}
+		else if (i<50) {
+			System.out.println("Your grade is: F");}
+			
+	}
+}
