@@ -1,0 +1,36 @@
+package task5;
+
+import java.util.Scanner;
+
+public class Tariff {
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the no.of month you want to book the room");
+		int n = input.nextInt();
+		System.out.println("Enter the tariff for per day");
+		float rent = input.nextFloat();
+		System.out.println("no.of days you want to book the room");
+		int days = input.nextInt();
+		float m = rent*days;
+		
+		switch(n)
+		{
+		case 4:
+		case 5:
+		case 6:
+		case 11:
+		case 12:
+			System.out.println("Your total tariff is:" + (m+(m*0.2)));
+			break;	
+			
+		default:
+			System.out.println("Your total tariff is:" + m);
+			break;
+			
+		}	
+		
+	}	
+	}
+
+
