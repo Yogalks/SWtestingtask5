@@ -1,0 +1,22 @@
+package task;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Task1 {
+	
+	public static void main(String[] args)
+	{
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com");
+		
+		System.out.println("The URL of current page:" +driver.getCurrentUrl());
+		driver.navigate().refresh();
+		driver.close();
+		
+	}
+
+}
+
+
